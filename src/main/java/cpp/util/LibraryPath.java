@@ -5,7 +5,8 @@ import java.io.File;
 public class LibraryPath {
 
 	public static String get() {
-		String osName = System.getProperty("os.name").toLowerCase();
+		String osName = System.getProperty("os.name").replaceAll("\\s","").toLowerCase();
+		System.out.println(osName);
 		if (osName.startsWith("linux")) {
 			return new File("native/linux_x86_64/libnative.so").getAbsolutePath();
 		} else if (osName.startsWith("mac")) {
