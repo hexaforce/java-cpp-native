@@ -8,13 +8,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import cpp.util.LibraryPath;
+import cpp.util.NativePath;
 
 public class ManualTests {
 	   
 	@BeforeEach
     public void setup() {
-		System.load(LibraryPath.get());
+		System.load(NativePath.get());
     }
     
     @Test

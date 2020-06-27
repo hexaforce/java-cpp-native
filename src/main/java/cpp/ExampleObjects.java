@@ -1,11 +1,11 @@
 package cpp;
 
-import cpp.util.LibraryPath;
+import cpp.util.NativePath;
 
 public class ExampleObjects {
 
 	static {
-		System.load(LibraryPath.get());
+		System.load(NativePath.get());
 	}
 
 	public static void main(String[] args) {

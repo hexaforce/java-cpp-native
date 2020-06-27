@@ -13,10 +13,10 @@ g++ -c -fPIC -I${JAVA_HOME}/include -I${JAVA_HOME}/include/darwin cpp_ExamplePar
 g++ -c -fPIC -I${JAVA_HOME}/include -I${JAVA_HOME}/include/darwin cpp_SayHello.cpp -o cpp_SayHello.o
 
 mkdir -p $SCRIPT_DIR/native/macos
-if [ -e ../../../native/macos/libnative.dylib ]; then
-  rm ../../../native/macos/libnative.dylib
+if [ -e ../../../native/libnative.dylib ]; then
+  rm ../../../native/libnative.dylib
 fi
 
-g++ -dynamiclib -o ../../../native/macos/libnative.dylib cpp_SayHello.o cpp_ExampleParameters.o cpp_ExampleObjects.o -lc
+g++ -dynamiclib -o ../../../native/libnative.dylib cpp_SayHello.o cpp_ExampleParameters.o cpp_ExampleObjects.o -lc
 
 find . -name '*.o' | xargs rm 
