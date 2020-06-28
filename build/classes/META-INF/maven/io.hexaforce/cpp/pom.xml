@@ -30,9 +30,11 @@
 	<build>
 		<sourceDirectory>java</sourceDirectory>
 		<testSourceDirectory>test</testSourceDirectory>
+
 		<directory>build</directory>
 		<outputDirectory>build/classes</outputDirectory>
 		<testOutputDirectory>build/test</testOutputDirectory>
+
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>

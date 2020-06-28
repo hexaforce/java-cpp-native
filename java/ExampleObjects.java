@@ -1,6 +1,3 @@
-package cpp;
-
-import cpp.util.NativePath;
 
 public class ExampleObjects {
 
