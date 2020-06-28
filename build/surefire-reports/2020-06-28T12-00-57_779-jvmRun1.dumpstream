@@ -1,0 +1,33 @@
+# Created at 2020-06-28T12:00:58.839
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Hello from C++ !!'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'Hello from C++ !!'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:507)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:210)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:177)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2020-06-28T12:00:58.856
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'C++: User data is: [name]=Sergio Ramos, [balance]=666.77'.
+
+# Created at 2020-06-28T12:00:58.858
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'C++: The string received is: Orange'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'C++: The string received is: Orange'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:507)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:210)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:177)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2020-06-28T12:00:58.860
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'C++: The numbers received are : 200 and 400'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'C++: The numbers received are : 200 and 400'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:507)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:210)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:177)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.lang.Thread.run(Thread.java:748)
+
+
