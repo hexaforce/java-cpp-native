@@ -5,15 +5,15 @@
 #ifndef _Included_SayHello
 #define _Included_SayHello
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
-/*
+  /*
  * Class:     SayHello
  * Method:    sayHello
  * Signature: ()Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_SayHello_sayHello
-  (JNIEnv *, jobject);
+  JNIEXPORT jstring JNICALL Java_SayHello_sayHello(JNIEnv *, jobject);
 
 #ifdef __cplusplus
 }

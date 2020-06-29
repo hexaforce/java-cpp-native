@@ -14,7 +14,7 @@ public class NativeLibrary {
 		this.os = OS.get();
 	}
 
-	public void setup() {
+	public void load() {
 		File libFile = new File(NATIVE_DIRECTORY + os.lib);
 		if (!libFile.exists()) {
 			try (InputStream inputStream = getClass().getResourceAsStream(os.lib)) {

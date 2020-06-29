@@ -11,7 +11,7 @@ public class ManualTests {
 
 	@BeforeEach
 	public void setup() {
-		new NativeLibrary().setup();
+		new NativeLibrary().load();
 	}
 
 	@Test

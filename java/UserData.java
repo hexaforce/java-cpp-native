@@ -1,5 +1,4 @@
 
-
 public class UserData {
 
 	public String name;

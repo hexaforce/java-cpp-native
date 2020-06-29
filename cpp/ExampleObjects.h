@@ -5,23 +5,22 @@
 #ifndef _Included_ExampleObjects
 #define _Included_ExampleObjects
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
-/*
+  /*
  * Class:     ExampleObjects
  * Method:    createUser
  * Signature: (Ljava/lang/String;D)LUserData;
  */
-JNIEXPORT jobject JNICALL Java_ExampleObjects_createUser
-  (JNIEnv *, jobject, jstring, jdouble);
+  JNIEXPORT jobject JNICALL Java_ExampleObjects_createUser(JNIEnv *, jobject, jstring, jdouble);
 
-/*
+  /*
  * Class:     ExampleObjects
  * Method:    printUserData
  * Signature: (LUserData;)Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_ExampleObjects_printUserData
-  (JNIEnv *, jobject, jobject);
+  JNIEXPORT jstring JNICALL Java_ExampleObjects_printUserData(JNIEnv *, jobject, jobject);
 
 #ifdef __cplusplus
 }

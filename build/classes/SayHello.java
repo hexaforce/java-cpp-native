@@ -2,13 +2,13 @@
 public class SayHello {
 
 	static {
-		new NativeLibrary().setup();
-	}
-
-	public static void main(String[] args) {
-		new SayHello().sayHello();
+		new NativeLibrary().load();
 	}
 
 	native String sayHello();
+
+//	public static void main(String[] args) {
+//		new SayHello().sayHello();
+//	}
 
 }
