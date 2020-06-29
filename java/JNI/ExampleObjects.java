@@ -10,10 +10,4 @@ public class ExampleObjects {
 
 	public native String printUserData(UserData user);
 
-//	public static void main(String[] args) {
-//		ExampleObjects instance = new ExampleObjects();
-//		UserData newUser = instance.createUser("John Doe", 450.67);
-//		instance.printUserData(newUser);
-//	}
-
 }
