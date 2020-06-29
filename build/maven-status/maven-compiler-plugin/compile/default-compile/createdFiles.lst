@@ -1,6 +1,6 @@
-NativeLibrary$OS.class
-NativeLibrary.class
-ExampleObjects.class
-SayHello.class
-UserData.class
-ExampleParameters.class
+JNI/ExampleObjects.class
+JNI/NativeLibrary$OS.class
+JNI/NativeLibrary.class
+JNI/UserData.class
+JNI/ExampleParameters.class
+JNI/SayHello.class

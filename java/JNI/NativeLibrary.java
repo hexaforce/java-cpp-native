@@ -1,3 +1,5 @@
+package JNI;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -7,7 +9,7 @@ import java.nio.file.StandardCopyOption;
 
 public class NativeLibrary {
 
-	final String NATIVE_DIRECTORY = "native/";
+	final String NATIVE_DIRECTORY = "native";
 	final OS os;
 
 	public NativeLibrary() {
@@ -15,11 +17,11 @@ public class NativeLibrary {
 	}
 
 	public void load() {
-		File libFile = new File(NATIVE_DIRECTORY + os.lib);
+		File libFile = new File(NATIVE_DIRECTORY + "/" + os.lib);
 		if (!libFile.exists()) {
-			try (InputStream inputStream = getClass().getResourceAsStream(os.lib)) {
+			try (InputStream inputStream = getClass().getResourceAsStream("/" + os.lib)) {
 				Files.createDirectories(Paths.get(NATIVE_DIRECTORY));
-				Files.copy(inputStream, libFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
+				Files.copy(inputStream, libFile.toPath(), StandardCopyOption.REPLACE_EXISTING);// Export binary.
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

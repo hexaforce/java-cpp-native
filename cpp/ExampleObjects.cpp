@@ -1,14 +1,14 @@
-#include "ExampleObjects.h"
+#include "JNI_ExampleObjects.h"
 #include <iostream>
 /*
- * Class:     ExampleObjects
+ * Class:     JNI_ExampleObjects
  * Method:    createUser
- * Signature: (Ljava/lang/String;D)LUserData;
+ * Signature: (Ljava/lang/String;D)LJNI/UserData;
  */
-JNIEXPORT jobject JNICALL Java_ExampleObjects_createUser(JNIEnv *env, jobject thisObject, jstring name, jdouble balance)
+JNIEXPORT jobject JNICALL Java_JNI_ExampleObjects_createUser(JNIEnv *env, jobject thisObject, jstring name, jdouble balance)
 {
   // Create the object of the class UserData
-  jclass userDataClass = env->FindClass("UserData");
+  jclass userDataClass = env->FindClass("JNI/UserData");
   jobject newUserData = env->AllocObject(userDataClass);
 
   // Get UserData fields to set
@@ -24,11 +24,11 @@ JNIEXPORT jobject JNICALL Java_ExampleObjects_createUser(JNIEnv *env, jobject th
 };
 
 /*
- * Class:     ExampleObjects
+ * Class:     JNI_ExampleObjects
  * Method:    printUserData
- * Signature: (LUserData;)Ljava/lang/String;
+ * Signature: (LJNI/UserData;)Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_ExampleObjects_printUserData(JNIEnv *env, jobject thisObject, jobject userData)
+JNIEXPORT jstring JNICALL Java_JNI_ExampleObjects_printUserData(JNIEnv *env, jobject thisObject, jobject userData)
 {
   // Find the class method id
   jclass userDataClass = env->GetObjectClass(userData);

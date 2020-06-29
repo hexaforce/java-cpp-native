@@ -1,4 +1,5 @@
 
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -7,11 +8,16 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import JNI.ExampleObjects;
+import JNI.ExampleParameters;
+import JNI.SayHello;
+import JNI.UserData;
+
 public class ManualTests {
 
 	@BeforeEach
 	public void setup() {
-		new NativeLibrary().load();
+		//new NativeLibrary().load();
 	}
 
 	@Test

@@ -1,3 +1,4 @@
+package JNI;
 
 public class SayHello {
 
@@ -5,7 +6,7 @@ public class SayHello {
 		new NativeLibrary().load();
 	}
 
-	native String sayHello();
+	public native String sayHello();
 
 //	public static void main(String[] args) {
 //		new SayHello().sayHello();
